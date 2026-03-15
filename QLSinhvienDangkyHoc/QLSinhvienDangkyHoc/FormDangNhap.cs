@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QLSinhvienDangkyHoc
 {
-    public partial class Form1 : Form
+    public partial class FormDangNhap : Form
     {
-        public Form1()
+        public FormDangNhap()
         {
             InitializeComponent();
+        }
+
+        private void FormDangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,12 @@
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\bin\Debug\QLSinhvienDangkyHoc.exe.config
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\bin\Debug\QLSinhvienDangkyHoc.exe
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\bin\Debug\QLSinhvienDangkyHoc.pdb
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.csproj.AssemblyReference.cache
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.FormDangNhap.resources
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.FormQLHocPhan.resources
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.FormQuenMK.resources
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.Properties.Resources.resources
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.csproj.GenerateResource.cache
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.csproj.CoreCompileInputs.cache
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.exe
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.pdb
