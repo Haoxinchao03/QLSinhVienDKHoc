@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboMonHoc = new System.Windows.Forms.ComboBox();
+            this.cboThu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cboGiangVien = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTiet = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSiSo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMaLopMonHoc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -59,33 +59,33 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Môn học";
             // 
-            // comboBox1
+            // cboMonHoc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboMonHoc.FormattingEnabled = true;
+            this.cboMonHoc.Items.AddRange(new object[] {
             "Trí tuệ nhân tạo",
             "Công nghệ Web",
             "Nền tảng Web",
             "Công nghệ phần mềm"});
-            this.comboBox1.Location = new System.Drawing.Point(39, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 28);
-            this.comboBox1.TabIndex = 8;
+            this.cboMonHoc.Location = new System.Drawing.Point(39, 88);
+            this.cboMonHoc.Name = "cboMonHoc";
+            this.cboMonHoc.Size = new System.Drawing.Size(235, 28);
+            this.cboMonHoc.TabIndex = 8;
             // 
-            // comboBox2
+            // cboThu
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboThu.FormattingEnabled = true;
+            this.cboThu.Items.AddRange(new object[] {
             "Thứ Hai",
             "Thứ Ba",
             "Thứ Tư",
             "Thứ Năm",
             "Thứ Sáu",
             "Thứ Bảy"});
-            this.comboBox2.Location = new System.Drawing.Point(409, 88);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(235, 28);
-            this.comboBox2.TabIndex = 10;
+            this.cboThu.Location = new System.Drawing.Point(409, 88);
+            this.cboThu.Name = "cboThu";
+            this.cboThu.Size = new System.Drawing.Size(235, 28);
+            this.cboThu.TabIndex = 10;
             // 
             // label2
             // 
@@ -115,16 +115,16 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Hệ đào tạo";
             // 
-            // comboBox4
+            // cboGiangVien
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cboGiangVien.FormattingEnabled = true;
+            this.cboGiangVien.Items.AddRange(new object[] {
             "Nguyễn Văn A",
             "Trần Thị B"});
-            this.comboBox4.Location = new System.Drawing.Point(39, 355);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(235, 28);
-            this.comboBox4.TabIndex = 14;
+            this.cboGiangVien.Location = new System.Drawing.Point(39, 355);
+            this.cboGiangVien.Name = "cboGiangVien";
+            this.cboGiangVien.Size = new System.Drawing.Size(235, 28);
+            this.cboGiangVien.TabIndex = 14;
             // 
             // label4
             // 
@@ -144,12 +144,12 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Tiết";
             // 
-            // textBox1
+            // txtTiet
             // 
-            this.textBox1.Location = new System.Drawing.Point(409, 212);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 26);
-            this.textBox1.TabIndex = 16;
+            this.txtTiet.Location = new System.Drawing.Point(409, 212);
+            this.txtTiet.Name = "txtTiet";
+            this.txtTiet.Size = new System.Drawing.Size(235, 26);
+            this.txtTiet.TabIndex = 16;
             // 
             // label6
             // 
@@ -192,12 +192,12 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Sĩ số tối đa";
             // 
-            // textBox2
+            // txtSiSo
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 481);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 26);
-            this.textBox2.TabIndex = 22;
+            this.txtSiSo.Location = new System.Drawing.Point(39, 481);
+            this.txtSiSo.Name = "txtSiSo";
+            this.txtSiSo.Size = new System.Drawing.Size(235, 26);
+            this.txtSiSo.TabIndex = 22;
             // 
             // button1
             // 
@@ -207,6 +207,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -216,14 +217,15 @@
             this.button2.TabIndex = 24;
             this.button2.Text = "Huỷ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox3
+            // txtMaLopMonHoc
             // 
-            this.textBox3.Location = new System.Drawing.Point(39, 548);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(235, 103);
-            this.textBox3.TabIndex = 25;
+            this.txtMaLopMonHoc.Location = new System.Drawing.Point(39, 548);
+            this.txtMaLopMonHoc.Multiline = true;
+            this.txtMaLopMonHoc.Name = "txtMaLopMonHoc";
+            this.txtMaLopMonHoc.Size = new System.Drawing.Size(235, 103);
+            this.txtMaLopMonHoc.TabIndex = 25;
             // 
             // label9
             // 
@@ -242,27 +244,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 700);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtMaLopMonHoc);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSiSo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTiet);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cboGiangVien);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboThu);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboMonHoc);
             this.Controls.Add(this.label1);
             this.Name = "FormThemThuCong";
             this.Text = "FormThemThuCong";
+            this.Load += new System.EventHandler(this.FormThemThuCong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,24 +274,24 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboMonHoc;
+        private System.Windows.Forms.ComboBox cboThu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cboGiangVien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTiet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSiSo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMaLopMonHoc;
         private System.Windows.Forms.Label label9;
     }
 }

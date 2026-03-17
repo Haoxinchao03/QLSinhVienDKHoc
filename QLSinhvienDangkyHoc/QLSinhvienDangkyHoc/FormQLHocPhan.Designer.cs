@@ -42,7 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHocPhan = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenmon = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +57,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnXoaCacLop = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnThemThuCong = new System.Windows.Forms.Button();
@@ -67,13 +67,13 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnTaoHocKy = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnTaoHocKy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocPhan)).BeginInit();
             this.pnlTaoHocKy.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -209,9 +209,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.dgvHocPhan);
             this.panel4.Controls.Add(this.pnlTaoHocKy);
-            this.panel4.Controls.Add(this.button13);
+            this.panel4.Controls.Add(this.btnXoaCacLop);
             this.panel4.Controls.Add(this.button12);
             this.panel4.Controls.Add(this.button11);
             this.panel4.Controls.Add(this.btnThemThuCong);
@@ -228,10 +228,10 @@
             this.panel4.Size = new System.Drawing.Size(999, 602);
             this.panel4.TabIndex = 3;
             // 
-            // dataGridView1
+            // dgvHocPhan
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvHocPhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHocPhan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.ma,
             this.tenmon,
@@ -240,12 +240,14 @@
             this.tiet,
             this.gioihan,
             this.dadangky});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 322);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(999, 277);
-            this.dataGridView1.TabIndex = 19;
+            this.dgvHocPhan.Location = new System.Drawing.Point(0, 322);
+            this.dgvHocPhan.Name = "dgvHocPhan";
+            this.dgvHocPhan.RowHeadersWidth = 62;
+            this.dgvHocPhan.RowTemplate.Height = 28;
+            this.dgvHocPhan.Size = new System.Drawing.Size(982, 277);
+            this.dgvHocPhan.TabIndex = 19;
+            this.dgvHocPhan.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHocPhan_CellValueChanged);
+            this.dgvHocPhan.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvHocPhan_CurrentCellDirtyStateChanged);
             // 
             // Column1
             // 
@@ -310,7 +312,7 @@
             this.pnlTaoHocKy.Controls.Add(this.label5);
             this.pnlTaoHocKy.Controls.Add(this.comboBox3);
             this.pnlTaoHocKy.Controls.Add(this.label4);
-            this.pnlTaoHocKy.Location = new System.Drawing.Point(768, 74);
+            this.pnlTaoHocKy.Location = new System.Drawing.Point(782, 98);
             this.pnlTaoHocKy.Name = "pnlTaoHocKy";
             this.pnlTaoHocKy.Size = new System.Drawing.Size(214, 240);
             this.pnlTaoHocKy.TabIndex = 13;
@@ -361,15 +363,16 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Năm học";
             // 
-            // button13
+            // btnXoaCacLop
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button13.Location = new System.Drawing.Point(836, 220);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(146, 50);
-            this.button13.TabIndex = 18;
-            this.button13.Text = "Xoá các lớp";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnXoaCacLop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnXoaCacLop.Location = new System.Drawing.Point(836, 220);
+            this.btnXoaCacLop.Name = "btnXoaCacLop";
+            this.btnXoaCacLop.Size = new System.Drawing.Size(146, 50);
+            this.btnXoaCacLop.TabIndex = 18;
+            this.btnXoaCacLop.Text = "Xoá các lớp";
+            this.btnXoaCacLop.UseVisualStyleBackColor = false;
+            this.btnXoaCacLop.Click += new System.EventHandler(this.btnXoaCacLop_Click);
             // 
             // button12
             // 
@@ -459,16 +462,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Trạng thái";
             // 
-            // btnTaoHocKy
-            // 
-            this.btnTaoHocKy.Location = new System.Drawing.Point(821, 27);
-            this.btnTaoHocKy.Name = "btnTaoHocKy";
-            this.btnTaoHocKy.Size = new System.Drawing.Size(161, 41);
-            this.btnTaoHocKy.TabIndex = 7;
-            this.btnTaoHocKy.Text = "Tạo học kỳ";
-            this.btnTaoHocKy.UseVisualStyleBackColor = true;
-            this.btnTaoHocKy.Click += new System.EventHandler(this.btnTaoHocKy_Click);
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -481,6 +474,16 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(378, 28);
             this.comboBox1.TabIndex = 8;
+            // 
+            // btnTaoHocKy
+            // 
+            this.btnTaoHocKy.Location = new System.Drawing.Point(821, 27);
+            this.btnTaoHocKy.Name = "btnTaoHocKy";
+            this.btnTaoHocKy.Size = new System.Drawing.Size(161, 41);
+            this.btnTaoHocKy.TabIndex = 7;
+            this.btnTaoHocKy.Text = "Tạo học kỳ";
+            this.btnTaoHocKy.UseVisualStyleBackColor = true;
+            this.btnTaoHocKy.Click += new System.EventHandler(this.btnTaoHocKy_Click);
             // 
             // FormQLHocPhan
             // 
@@ -501,7 +504,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHocPhan)).EndInit();
             this.pnlTaoHocKy.ResumeLayout(false);
             this.pnlTaoHocKy.PerformLayout();
             this.ResumeLayout(false);
@@ -535,11 +538,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnXoaCacLop;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnThemThuCong;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvHocPhan;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ma;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenmon;
