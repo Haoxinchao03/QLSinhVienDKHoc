@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Text.RegularExpressions;
-using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace QLSinhvienDangkyHoc
 {
     public partial class FormQuenMK : Form
     {
+        string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyHocPhan;Integrated Security=True";
         string otpCode = "";
 
         public FormQuenMK()
@@ -224,6 +226,63 @@ namespace QLSinhvienDangkyHoc
 
             MessageBox.Show("Đặt lại mật khẩu thành công!");
             this.Close();
+        }
+
+        private void btnXacNhan_Click_1(object sender, EventArgs e)
+        {
+            if (txtEmail.Text.Trim() == "" ||
+                txtOTP.Text.Trim() == "" ||
+                txtMatKhauMoi.Text.Trim() == "" ||
+                txtNhapLaiMatKhau.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            if (txtOTP.Text.Trim() != otpCode)
+            {
+                MessageBox.Show("Mã OTP không đúng!");
+                txtOTP.Focus();
+                return;
+            }
+
+            if (txtMatKhauMoi.Text.Trim() != txtNhapLaiMatKhau.Text.Trim())
+            {
+                MessageBox.Show("Nhập lại mật khẩu không khớp!");
+                txtNhapLaiMatKhau.Focus();
+                return;
+            }
+
+            SqlConnection conn = new SqlConnection(connStr);
+            string query = "UPDATE Admin SET MatKhau = @mk WHERE Email = @email";
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@mk", txtMatKhauMoi.Text.Trim());
+            cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
+
+            try
+            {
+                conn.Open();
+                int kq = cmd.ExecuteNonQuery();
+                conn.Close();
+
+                if (kq > 0)
+                {
+                    MessageBox.Show("Đổi mật khẩu thành công!");
+
+                    FormDangNhap f = new FormDangNhap();
+                    f.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Đổi mật khẩu thất bại!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
     }
 }

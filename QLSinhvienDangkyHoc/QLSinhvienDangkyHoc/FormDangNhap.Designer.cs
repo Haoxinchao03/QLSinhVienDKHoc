@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.llbQuenMatKhau = new System.Windows.Forms.LinkLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
@@ -72,7 +72,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnDangNhap);
             this.panel1.Controls.Add(this.llbQuenMatKhau);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.txtMatKhau);
@@ -95,16 +95,17 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "ĐĂNG NHẬP";
             // 
-            // button1
+            // btnDangNhap
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(125, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 56);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangNhap.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnDangNhap.Location = new System.Drawing.Point(125, 416);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(138, 56);
+            this.btnDangNhap.TabIndex = 8;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // llbQuenMatKhau
             // 
@@ -139,6 +140,7 @@
             this.txtMatKhau.Size = new System.Drawing.Size(276, 43);
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.Text = "Mật khẩu";
+            this.txtMatKhau.UseSystemPasswordChar = true;
             this.txtMatKhau.Click += new System.EventHandler(this.txtMatKhau_Click);
             this.txtMatKhau.Enter += new System.EventHandler(this.txtMatKhau_Enter);
             this.txtMatKhau.Leave += new System.EventHandler(this.txtMatKhau_Leave);
@@ -208,7 +210,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtDangNhap;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.LinkLabel llbQuenMatKhau;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txtMatKhau;

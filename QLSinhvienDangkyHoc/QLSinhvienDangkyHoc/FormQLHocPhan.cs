@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace QLSinhvienDangkyHoc
 {
     public partial class FormQLHocPhan : Form
     {
+        string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyHocPhan;Integrated Security=True";
         public FormQLHocPhan()
         {
             InitializeComponent();
@@ -100,6 +102,25 @@ namespace QLSinhvienDangkyHoc
             }
 
             KiemTraNutXoa();
+        }
+        private void TestLoad()
+        {
+            SqlConnection conn = new SqlConnection(connStr);
+            string query = "SELECT * FROM HocKy";
+
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+                MessageBox.Show("Đã kết nối và có dữ liệu!");
+            else
+                MessageBox.Show("Kết nối OK nhưng chưa có dữ liệu!");
+        }
+
+        private void bntTest_Click(object sender, EventArgs e)
+        {
+            TestLoad();
         }
     }
 }

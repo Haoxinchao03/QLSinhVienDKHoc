@@ -69,6 +69,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnTaoHocKy = new System.Windows.Forms.Button();
+            this.bntTest = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -79,6 +80,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bntTest);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -485,6 +487,16 @@
             this.btnTaoHocKy.UseVisualStyleBackColor = true;
             this.btnTaoHocKy.Click += new System.EventHandler(this.btnTaoHocKy_Click);
             // 
+            // bntTest
+            // 
+            this.bntTest.Location = new System.Drawing.Point(774, 39);
+            this.bntTest.Name = "bntTest";
+            this.bntTest.Size = new System.Drawing.Size(80, 37);
+            this.bntTest.TabIndex = 1;
+            this.bntTest.Text = "button10";
+            this.bntTest.UseVisualStyleBackColor = true;
+            this.bntTest.Click += new System.EventHandler(this.bntTest_Click);
+            // 
             // FormQLHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -553,5 +565,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dadangky;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button bntTest;
     }
 }

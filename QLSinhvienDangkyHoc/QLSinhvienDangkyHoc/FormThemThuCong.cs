@@ -12,6 +12,7 @@ namespace QLSinhvienDangkyHoc
 {
     public partial class FormThemThuCong : Form
     {
+        string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyHocPhan;Integrated Security=True";
         FormQLHocPhan frmCha;
         public FormThemThuCong(FormQLHocPhan f)
         {

@@ -16,7 +16,7 @@ namespace QLSinhvienDangkyHoc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQLHocPhan());
+            Application.Run(new FormDangNhap());
         }
     }
 }
