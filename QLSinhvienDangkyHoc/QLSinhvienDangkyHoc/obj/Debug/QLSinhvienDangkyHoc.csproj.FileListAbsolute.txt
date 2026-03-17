@@ -10,3 +10,4 @@ D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.
 D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.csproj.CoreCompileInputs.cache
 D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.exe
 D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.pdb
+D:\MaiChi\QLSinhvienDangkyHoc\QLSinhvienDangkyHoc\obj\Debug\QLSinhvienDangkyHoc.FormThemThuCong.resources

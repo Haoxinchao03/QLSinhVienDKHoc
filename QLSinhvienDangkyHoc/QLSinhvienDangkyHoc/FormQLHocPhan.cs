@@ -16,5 +16,22 @@ namespace QLSinhvienDangkyHoc
         {
             InitializeComponent();
         }
+
+        private void FormQLHocPhan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTaoHocKy_Click(object sender, EventArgs e)
+        {
+            pnlTaoHocKy.Visible = !pnlTaoHocKy.Visible;
+        }
+
+
+        private void btnThemThuCong_Click(object sender, EventArgs e)
+        {
+            FormThemThuCong f = new FormThemThuCong();
+            f.ShowDialog();
+        }
     }
 }
